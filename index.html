@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS link -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+
+  <title>Nature's Garden</title>
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f0f8f0;
+    }
+
+    .navbar {
+      background-color: #4CAF50;
+    }
+
+    .navbar-brand, .nav-link {
+      color: white !important;
+    }
+
+    .carousel-inner img {
+      height: 500px;
+      object-fit: cover;
+    }
+
+    .card {
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .main_heading h1 {
+      color: #4CAF50;
+      font-size: 2.5rem;
+    }
+
+    .card-body h5 {
+      color: #4CAF50;
+    }
+
+    .footer {
+      background-color: #4CAF50;
+      text-align: center;
+      padding: 20px;
+      color: white;
+    }
+
+    .offer_style {
+      background-color: #2e7d32;
+      color: white;
+      padding: 50px;
+      text-align: center;
+    }
+
+    .container-services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .service-card {
+      width: 30%;
+      margin: 15px;
+      background-color: white;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand text-capitalize" href="#">Nature's Garden</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header Section with Nature Image -->
+  <header>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2">
+        </button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3">
+        </button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://images.unsplash.com/photo-1487700160041-babef9c3cb55?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBsYW50fGVufDB8fDB8fHww" class="d-block w-100" alt="nature1.jpg">
+          <div class="carousel-caption d-md-block" style="color: black;">
+            <h5>Welcome to Nature's Garden</h5>
+            <p>"Where every plant tells a story of life, growth, and beauty."</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://media.istockphoto.com/id/1454383133/photo/collection-of-beautiful-plants-in-ceramic-pots-isolated-on-white-background-3d-rendering.jpg?s=612x612&w=0&k=20&c=PWUR_BupIjlKPQQQE1Tsgr3Ynun3wVoeislGsMSQBd4=" class="d-block w-100" alt="nature2.jpg">
+          <div class="carousel-caption d-md-block" style="color: black;">
+            <h5>The Beauty of Nature</h5>
+            <p>"Discover the calming power of plants and nature around us."</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="nature3.jpg" class="d-block w-100" alt="nature3.jpg">
+          <div class="carousel-caption d-md-block">
+            <h5>Plants for Peace</h5>
+            <p>"Let nature inspire peace and calm in your life."</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Services Section (15 Plant Types) -->
+  <section class="main_heading my-5">
+    <div class="text-center my-5">
+      <h1 class="display-4 my-5">Our Plants</h1>
+      <hr class="w-25 mx-auto" />
+    </div>
+    <div class="container">
+      <div class="row gy-5 gx-5">
+        <!-- 15 Plant Cards -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://imgs.search.brave.com/HNgipOVnd0ILY8IsxoNoAU0gsnemmr7OCZbmVas26oA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTQ3/NTMxNDIzMC9waG90/by9hbG9lLXZlcmEt/cGxhbnQuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPUR1NGdZ/TnJMR095dGtST2Z2/ZmVfOWVCWHllTGwy/TG1vVEd0VktGVG9v/bFk9" class="card-img-top" alt="Aloe Vera">
+            <div class="card-body">
+              <h5 class="card-title">Aloe Vera</h5>
+              <p class="card-text">Aloe Vera is widely known for its soothing and healing properties for skin burns and cuts.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://imgs.search.brave.com/v9qC9leoTjdP-fH0mhPslEbHkkYkpAZqJ9TEusB4pSU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNTAx/ODk5NzI3L3Bob3Rv/L2phc21pbmUuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPWMx/dWIzS3NqQ2ZVTFNq/YVRNRTNxcHZOeEtU/UzB6TVhKa2RCQkx2/dWY1dEk9" class="card-img-top" alt="Jasmine">
+            <div class="card-body">
+              <h5 class="card-title">Jasmine</h5>
+              <p class="card-text">Jasmine flowers are known for their sweet fragrance and are widely used in perfumes and teas.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://imgs.search.brave.com/hpZPDLTM8PsGkBpAzLMmjL6L1MEPfA_qE5h-gwLLToI/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA5Lzg5LzQ5LzI5/LzM2MF9GXzk4OTQ5/Mjk3NV9PT3pUZzUx/N1RxeUl3UnN5VDFL/TTBHbk12VTNPeXpx/Zi5qcGc" class="card-img-top" alt="Rubber Plant">
+            <div class="card-body">
+              <h5 class="card-title">Rubber Plant</h5>
+              <p class="card-text">The Rubber Plant is a popular indoor plant known for its large, shiny leaves that purify the air.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add 12 more plant cards with details, images, and benefits as needed... -->
+      </div>
+    </div>
+  </section>
